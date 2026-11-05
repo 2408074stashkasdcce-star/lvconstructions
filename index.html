@@ -30,16 +30,16 @@
                 <option value="BA">BA</option>
             </select>
         </label>
-        <button type="button">Submit Form</button>
+        <button type="submit">Submit Form</button>
     </form>
 
     <script>
         function submitform(){
             let data={
-                name:document.getElementById("name"),
-                email:document.getElementById("email"),
-                phone:document.getElementById("phone"),
-                course:document.getElementById("course")
+                name:document.getElementById("name").value,
+                email:document.getElementById("email").value,
+                phone:document.getElementById("phone").value,
+                course:document.getElementById("course").value
             };
 
             fetch("https://script.google.com/macros/s/AKfycbzGQkt7_zZ7d7AUj0Ig4xA5tONhuSDfsck2nW1TxAm02nYSeTte9RHdfQc461hUThj4vQ/exec",{
